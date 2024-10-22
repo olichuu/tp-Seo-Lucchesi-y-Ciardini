@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: 		rgb(203, 170, 151);
+    background-color: #EEC8A3;;
 }
 
 
@@ -86,4 +86,11 @@ body{
 
 #contMenu nav ul li:hover ul {
     display: block;
+}
+
+#texto{
+    background-color: rgb(141, 48, 44);
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
