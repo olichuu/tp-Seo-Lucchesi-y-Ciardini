@@ -68,13 +68,13 @@ body {
 }
 
 
-#texto {
+#tit {
     background-color: #8D302C;
     color: white;
     padding: 15px;
     text-align: center;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 95%;
 }
 
 .carousel-container {
@@ -108,11 +108,16 @@ body {
 }
 
 .buy-btn {
-    background-color: #D24C49; 
-    border: none; 
-    color: white; 
+    background-color: #aa3632; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 0.75rem 1.5rem; /* Ajusta el padding para más espacio alrededor del texto */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto de transición suave para el color de fondo */
+    font-size: 1rem; /* Tamaño de fuente ajustado para legibilidad */
+    border-radius: 5px; /* Bordes redondeados para un aspecto más moderno */
 }
 
 .buy-btn:hover {
-    background-color: #b2393b; 
+    background-color: #a32723; /* Cambio de color al pasar el mouse */
 }
