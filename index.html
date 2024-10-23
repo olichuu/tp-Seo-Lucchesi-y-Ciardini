@@ -26,44 +26,57 @@
 </head>
 <body>
     
-    <div class="snowflakes row container-fluid" aria-hidden="true">
-        <div class="snowflake col-lg-2 col-sm-2">❅</div>
-        <div class="snowflake col-lg-1 col-sm-1">❆</div>
-        <div class="snowflake col-lg-2 col-sm-2">❅</div>
-        <div class="snowflake col-lg-1 col-sm-1">❆</div>
-        <div class="snowflake col-lg-2 col-sm-2">❅</div>
-        <div class="snowflake col-lg-1 col-sm-1">❆</div>
-        <div class="snowflake col-lg-2 col-sm-2">❅</div>
-        <div class="snowflake col-lg-1 col-sm-1">❆</div>
+    <!--
+    <div class="snowflakes row container-fluid col-lg-12 col-xs-12" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
     </div>
-
+-->
     <header class="row container-fluid" id="header">
 
-        <div id="contMenu" class="">
-            <div class="col-lg-4 col-sm-12 contLogo">
-                <img id="logo" src="assets/imagenes/logos/logo.png" alt="">
-            </div>
-            <nav class="col-lg-8 col-sm-12">
-                <ul>
-                    <li class=""><a href="paginas/pagina1.html">Tienda Virtual</a></li>
-                    <li class=""><a href="#contRecetas">Recetas</a></li>
-                    <li class=""><a href="">Sucursales</a></li>
-                    <li class=""><a href="">Iniciar Sesión</a></li>
-                    <li class=""><a href="">Registrarse</a></li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Iniciar Sesión / Registrarse</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="paginas/pagina1.html">Tienda Online</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contRecetas">Recetas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sucursales</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
+                <span class="navbar-text">
+                    <img src="assets/imagenes/logos/logo.png" alt="">
+                </span>
+              </div>
+            </div>
+          </nav>
+
+
         
     </header>
 
     <main class="row container-fluid" id="main">
 
         <div class="contImg1">
-            <img id="img1" src="assets/imagenes/navidad.png" alt="Imagen Navideña">
-            <div id="contTitulo1">
+            <img id="img1" class=".img-fluid" src="assets/imagenes/navidad.png" alt="Imagen Navideña">
+            <div id="contTitulo1" class="col-lg-12 col-sm-12 col-xs-12">
                 <h1 id="titulo1">Rincón Navideño</h1>
             </div>
-            <div id="contTitulo2">
+            <div id="contTitulo2" class="col-lg-12 col-sm-12 col-xs-12">
                 <h2 id="titulo2">"Bienvenidos a un mundo donde la magia de la Navidad cobra vida"</h2>
             </div>
         </div>
@@ -73,10 +86,10 @@
                 <div class="col-lg-6">
                     <h1>Faltan para Navidad</h1>
                 </div>
-                <div class="col-lg-6 col-xs-12">
+                <div class="col-lg-6 col-sm-12">
                     <div class="d-flex justify-content-end time-container">
                         <div class="time-box">
-                            <h2>60</h2>
+                            <h2>59</h2>
                             <p>Días</p>
                         </div>
                         <div class="time-box">
