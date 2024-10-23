@@ -1,18 +1,17 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; 
 }
-main{
+
+main {
     background-color: #EEC8A3;
     margin-bottom: 20px;
 }
 
-#cuerpo{
+#cuerpo {
     background-color: #EEC8A3;
 }
-
-
-
 
 .snowflakes {
     position: fixed;
@@ -39,74 +38,42 @@ main{
     100% { transform: translateY(100vh); }
 }
 
-.snowflake:nth-child(1) {
-    left: 10%;
-    animation-duration: 10s;
-    animation-delay: 0s;
-}
+.snowflake:nth-child(1) { left: 10%; animation-duration: 10s; animation-delay: 0s; }
+.snowflake:nth-child(2) { left: 20%; animation-duration: 12s; animation-delay: 2s; }
+.snowflake:nth-child(3) { left: 30%; animation-duration: 8s; animation-delay: 4s; }
+.snowflake:nth-child(4) { left: 40%; animation-duration: 10s; animation-delay: 6s; }
+.snowflake:nth-child(5) { left: 50%; animation-duration: 14s; animation-delay: 8s; }
+.snowflake:nth-child(6) { left: 60%; animation-duration: 12s; animation-delay: 10s; }
 
-.snowflake:nth-child(2) {
-    left: 20%;
-    animation-duration: 12s;
-    animation-delay: 2s;
-}
-
-.snowflake:nth-child(3) {
-    left: 30%;
-    animation-duration: 8s;
-    animation-delay: 4s;
-}
-
-.snowflake:nth-child(4) {
-    left: 40%;
-    animation-duration: 10s;
-    animation-delay: 6s;
-}
-
-.snowflake:nth-child(5) {
-    left: 50%;
-    animation-duration: 14s;
-    animation-delay: 8s;
-}
-
-.snowflake:nth-child(6) {
-    left: 60%;
-    animation-duration: 12s;
-    animation-delay: 10s;
-}
-
-#header{
+#header {
     padding: 0;
     margin: 0;
 }
 
 #contMenu {
     width: 100%;
-    height: 75px;
-    background-color: 	rgb(141, 48, 44);
+    height: 110% ; 
+    background-color: rgb(141, 48, 44);
     display: flex;
     align-items: center;
     padding: 0; 
-}
-
-
+    flex-wrap: wrap; 
 .contLogo {
-    padding: 0px 0px 0px 10px;
-    margin: 0; 
-    width: 60px;
-    height: 55px;
+    position: relative; 
 }
 
-#logo{
-    height: 100%;
-    width: 100%;
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; 
+    height: auto; 
 }
-
 
 #contMenu nav {
     flex-grow: 1;
     display: flex;
-    justify-content: center; 
 }
 
 #contMenu nav ul {
@@ -114,28 +81,26 @@ main{
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #contMenu nav ul li {
     position: relative;
-    font-size: 25px;
+    font-size: 20px; 
 }
 
 #contMenu nav ul li a {
     display: block;
-    padding: 10px 20px;
-    color:#f5e1c6;
+    padding: 10px 15px; 
+    color: #f5e1c6;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     transition: color 0.3s ease;
-
 }
 
 #contMenu nav ul li:hover > a {
-    color:#f8d09d ;
+    color: #f8d09d;
 }
-
-
 
 #tit {
     background-color: #8D302C;
@@ -143,11 +108,12 @@ main{
     padding: 15px;
     text-align: center;
     margin: 20px auto;
-    max-width: 95%;
+    max-width: 70%; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .carousel-container {
-    max-width: 600px; 
+    max-width: 70%; 
     margin: 0 auto; 
 }
 
@@ -155,15 +121,20 @@ main{
     text-align: center;
     background-color: #8D302C; 
     color: white; 
-    padding: 20px 0; 
+    padding: 20px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .carousel-item img {
-    max-width: 100%; 
-    height: auto; 
-    max-height: 300px; 
-    display: block; 
-    margin: 0 auto; 
+    max-width: 100%;
+    height: auto;
+    max-height: 25%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease; 
+
+.carousel-item img:hover {
+    transform: scale(1.1);  
 }
 
 .carousel-item h2,
@@ -174,6 +145,7 @@ main{
 
 .carousel-item h2 {
     margin-top: 10px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .buy-btn {
@@ -191,13 +163,12 @@ main{
     background-color: #a32723; 
 }
 
-
-
 footer {
     margin: 0;
     width: 100%;
-    height: 200px;
+    height: auto; 
     display: flex;
+    flex-direction: column; 
     background-color: rgb(141, 48, 44);
     color: white;
     padding: 20px;
@@ -208,6 +179,7 @@ footer {
     margin: 0;
     width: 100%;
     display: flex;
+    flex-direction: column; 
     padding-bottom: 20px;
     border-bottom: 1px solid #f5e1c6;
 }
@@ -219,6 +191,7 @@ footer ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
 }
 
 footer ul li {
@@ -226,7 +199,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color:#f5e1c6;
+    color: #f5e1c6;
     text-decoration: none;
 }
 
@@ -234,21 +207,19 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-.contContactos{
-    align-self: top;
-    justify-self: right;
+.contContactos {
+    align-self: flex-start;
+    justify-self: flex-end;
     text-align: right;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
-
-#titContactos{
+#titContactos {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:  #f5e1c6;
     margin-top: 10px;
     font-size: 18px;
 }
-
 
 .contContactos a {
     color: #f5e1c6;
@@ -259,8 +230,6 @@ footer ul li a:hover {
 .contContactos a:hover {
     text-decoration: underline;
 }
-
-
 
 .contText {
     margin-top: auto; 
@@ -273,7 +242,53 @@ footer ul li a:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     padding: 10px;
-    color:#f5e1c6;
+    color: #f5e1c6;
 }
 
 
+@media (max-width: 767px) {
+    #contMenu nav ul li {
+        font-size: 18px; 
+    }
+
+    #tit {
+        max-width: 90%
+    }
+
+    .carousel-container {
+        max-width: 95%; 
+    }
+
+    footer ul {
+        flex-direction: column; 
+    }
+
+    .contContactos {
+        align-self: flex-start;
+        text-align: left; 
+    }
+}
+
+@media (max-width: 480px) {
+    #contMenu {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    #logo {
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+
+    .buy-btn {
+        padding: 0.5rem 1rem; 
+    }
+
+    #titContactos {
+        font-size: 16px; 
+    }
+
+    #text {
+        font-size: 12px;
+    }
+}
