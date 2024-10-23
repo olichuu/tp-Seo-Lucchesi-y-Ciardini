@@ -91,8 +91,32 @@ body{
     margin: 0;
 }
 
+.menu{
+    background-color: #f5e1c6 !important;
+}
+
+.menuCosas{
+    color:  rgb(141, 48, 44) !important;
+    font-size: 30px;
+    transition: color 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menuCosas:hover{
+    color:   #3b5c2d !important;
+}
 
 
+.inicio{
+    color:  rgb(141, 48, 44) !important;
+    font-size: 17px;
+    transition: color 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.inicio:hover {
+    color:  #3b5c2d !important;
+}
 
 main{
     background-image: url(../assets/imagenes/fondo.png);
