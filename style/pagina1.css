@@ -5,12 +5,14 @@
 }
 
 main {
-    background-image: url(../assets/imagenes/muerdag.png);
+    background-color: #f5e1c6;
+    background-image: url(../assets/imagenes/luz.png);
     margin-bottom: 20px;
 }
 
 #cuerpo {
-    background-image: url(../assets/imagenes/muerdag.png);
+    background-color: #f5e1c6;
+    background-image: url(../assets/imagenes/luz.png);
 }
 
 .snowflakes {
@@ -38,12 +40,56 @@ main {
     100% { transform: translateY(100vh); }
 }
 
-.snowflake:nth-child(1) { left: 10%; animation-duration: 10s; animation-delay: 0s; }
-.snowflake:nth-child(2) { left: 20%; animation-duration: 12s; animation-delay: 2s; }
-.snowflake:nth-child(3) { left: 30%; animation-duration: 8s; animation-delay: 4s; }
-.snowflake:nth-child(4) { left: 40%; animation-duration: 10s; animation-delay: 6s; }
-.snowflake:nth-child(5) { left: 50%; animation-duration: 14s; animation-delay: 8s; }
-.snowflake:nth-child(6) { left: 60%; animation-duration: 12s; animation-delay: 10s; }
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+
+.snowflake:nth-child(2) {
+    left: 20%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.snowflake:nth-child(3) {
+    left: 30%;
+    animation-duration: 8s;
+    animation-delay: 4s;
+}
+
+.snowflake:nth-child(4) {
+    left: 40%;
+    animation-duration: 10s;
+    animation-delay: 6s;
+}
+
+.snowflake:nth-child(5) {
+    left: 50%;
+    animation-duration: 14s;
+    animation-delay: 8s;
+}
+
+.snowflake:nth-child(6) {
+    left: 60%;
+    animation-duration: 12s;
+    animation-delay: 10s;
+}
+
+.snowflake:nth-child(7) {
+    left: 70%;
+    animation-duration: 8s;
+    animation-delay: 12s;
+}
+
+.snowflake:nth-child(8) {
+    left: 80%;
+    animation-duration: 10s;
+    animation-delay: 14s;
+}
+
+
+
 
 #header {
     padding: 0;
@@ -52,12 +98,11 @@ main {
 
 #contMenu {
     width: 100%;
-    height: auto;
+    height: 75px;
     background-color: #f5e1c6;
     display: flex;
     align-items: center;
-    padding: 0;
-    flex-wrap: wrap;
+    padding: 0; 
 }
 
 .contLogo {
@@ -76,7 +121,7 @@ main {
 #contMenu nav {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 #contMenu nav ul {
@@ -94,16 +139,19 @@ main {
 #contMenu nav ul li a {
     display: block;
     padding: 10px 20px;
-    color: rgb(141, 48, 44);
+    color:	rgb(141, 48, 44);
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease; 
 }
 
-#contMenu nav ul li:hover a {
-    color: rgb(87, 32, 29);
+#contMenu nav ul li:hover > a {
+    color:rgb(87, 32, 29) ;
     transform: scale(1.05);
 }
+
+
 
 
 #tit {
@@ -120,7 +168,7 @@ main {
     font-size: 50px;
 }
 
-.carousel-container {
+.carouselContainer {
     max-width: 70%;
     margin: 0 auto;
 }
@@ -171,6 +219,12 @@ main {
 
 .buy-btn:hover {
     background-color: #a32723;
+}
+
+.carruselCont{
+    max-width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 /* Footer */
@@ -264,6 +318,7 @@ footer ul li a:hover {
 
     #tit {
         max-width: 90%;
+        font-size: medium;
     }
 
     .carousel-container {
