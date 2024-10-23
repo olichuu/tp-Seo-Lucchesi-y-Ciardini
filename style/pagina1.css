@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box; /* Control del box model */
 }
 
 main {
@@ -52,14 +52,16 @@ main {
 
 #contMenu {
     width: 100%;
-    height: 110% ; 
+    height: auto; /* Cambiado para que el menú se adapte al contenido */
     background-color: rgb(141, 48, 44);
     display: flex;
     align-items: center;
     padding: 0; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
 .contLogo {
-    position: relative; 
+    position: relative; /* Necesario para la proporción */
 }
 
 #logo {
@@ -81,17 +83,17 @@ main {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
 }
 
 #contMenu nav ul li {
     position: relative;
-    font-size: 20px; 
+    font-size: 20px; /* Tamaño de fuente inicial */
 }
 
 #contMenu nav ul li a {
     display: block;
-    padding: 10px 15px; 
+    padding: 10px 15px; /* Ajuste en el padding */
     color: #f5e1c6;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -108,12 +110,12 @@ main {
     padding: 15px;
     text-align: center;
     margin: 20px auto;
-    max-width: 70%; 
+    max-width: 70%; /* Cambiado a un porcentaje más alto para móviles */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .carousel-container {
-    max-width: 70%; 
+    max-width: 70%; /* Cambiado a un porcentaje más alto para móviles */
     margin: 0 auto; 
 }
 
@@ -131,7 +133,8 @@ main {
     max-height: 25%;
     display: block;
     margin: 0 auto;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease; /* Añade la transición */
+}
 
 .carousel-item img:hover {
     transform: scale(1.1);  
@@ -166,9 +169,9 @@ main {
 footer {
     margin: 0;
     width: 100%;
-    height: auto; 
+    height: auto; /* Cambiado para adaptarse al contenido */
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /* Cambiado a columna para móviles */
     background-color: rgb(141, 48, 44);
     color: white;
     padding: 20px;
@@ -179,7 +182,7 @@ footer {
     margin: 0;
     width: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /* Cambiado a columna para móviles */
     padding-bottom: 20px;
     border-bottom: 1px solid #f5e1c6;
 }
@@ -191,7 +194,7 @@ footer ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
 }
 
 footer ul li {
@@ -212,8 +215,9 @@ footer ul li a:hover {
     justify-self: flex-end;
     text-align: right;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /* Asegura que los elementos se alineen verticalmente */
 }
+
 #titContactos {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:  #f5e1c6;
@@ -245,50 +249,50 @@ footer ul li a:hover {
     color: #f5e1c6;
 }
 
-
+/* Media Queries para Responsividad */
 @media (max-width: 767px) {
     #contMenu nav ul li {
-        font-size: 18px; 
+        font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
     }
 
     #tit {
-        max-width: 90%
+        max-width: 90%; /* Ajusta el ancho máximo */
     }
 
     .carousel-container {
-        max-width: 95%; 
+        max-width: 95%; /* Aumenta el ancho en pantallas más pequeñas */
     }
 
     footer ul {
-        flex-direction: column; 
+        flex-direction: column; /* Coloca los elementos en columnas en pantallas pequeñas */
     }
 
     .contContactos {
         align-self: flex-start;
-        text-align: left; 
+        text-align: left; /* Cambia la alineación a la izquierda para móviles */
     }
 }
 
 @media (max-width: 480px) {
     #contMenu {
-        flex-direction: column; 
-        height: auto; 
+        flex-direction: column; /* Cambia a una columna en pantallas muy pequeñas */
+        height: auto; /* Permite que el contenedor se ajuste a su contenido */
     }
 
     #logo {
-        left: 50%; 
+        left: 50%; /* Centra el logo en pantallas pequeñas */
         transform: translate(-50%, -50%);
     }
 
     .buy-btn {
-        padding: 0.5rem 1rem; 
+        padding: 0.5rem 1rem; /* Ajusta el tamaño del botón */
     }
 
     #titContactos {
-        font-size: 16px; 
+        font-size: 16px; /* Reduce el tamaño del texto en contactos */
     }
 
     #text {
-        font-size: 12px;
+        font-size: 12px; /* Reduce el tamaño del texto */
     }
 }
