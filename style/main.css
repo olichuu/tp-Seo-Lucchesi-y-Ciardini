@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body{
+    background-color: #EEC8A3;
+}
+
+
 #main{
     padding: 0 !important;
     margin: 0 !important;
@@ -171,6 +176,7 @@ p {
     align-content: center;
     justify-content: center;
     position: relative; 
+
 }
 
 .carrusel {
@@ -184,7 +190,7 @@ p {
 }
 
 .contCarrusel:hover .carousel-inner img {
-    opacity: 0.3; 
+    opacity: 0.6; 
 }
 
 
@@ -223,20 +229,20 @@ p {
 .imagenes{
     padding: 30px 0px 50px 0px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas de ancho */
-    grid-gap: 20px; /* Espacio entre las imágenes */
-    width: 80%; /* Ajusta el ancho total del grid */
-    justify-items: center; /* Centra las imágenes horizontalmente */
-    margin: 0 auto; /* Centra el grid en la página */
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px; 
+    width: 80%; 
+    justify-items: center;
+    margin: 0 auto; 
 }
 
 .img {
     cursor: pointer; 
-    width: 100%; /* Que cada imagen ocupe el 100% de la columna */
+    width: 100%; 
     height: auto;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para las imágenes */
-    transition: transform 0.3s ease; /* Opcional: añade una transición suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
 }
 
 .img:hover {
