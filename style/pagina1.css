@@ -5,12 +5,12 @@
 }
 
 main {
-    background-color: #EEC8A3;
+    background-color: #f5e1c6;
     margin-bottom: 20px;
 }
 
 #cuerpo {
-    background-color: #EEC8A3;
+    background-color: #f5e1c6;
 }
 
 .snowflakes {
@@ -53,7 +53,7 @@ main {
 #contMenu {
     width: 100%;
     height: auto; /* Cambiado para que el menú se adapte al contenido */
-    background-color: rgb(141, 48, 44);
+    background-color: #f5e1c6;
     display: flex;
     align-items: center;
     padding: 0; 
@@ -72,10 +72,10 @@ main {
     max-width: 100%; 
     height: auto; 
 }
-
 #contMenu nav {
     flex-grow: 1;
     display: flex;
+    justify-content: center; 
 }
 
 #contMenu nav ul {
@@ -83,25 +83,26 @@ main {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
 }
 
 #contMenu nav ul li {
     position: relative;
-    font-size: 20px; /* Tamaño de fuente inicial */
+    font-size: 25px;
 }
 
 #contMenu nav ul li a {
     display: block;
-    padding: 10px 15px; /* Ajuste en el padding */
-    color: #f5e1c6;
+    padding: 10px 20px;
+    color:	rgb(141, 48, 44);
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     transition: color 0.3s ease;
+    transition: transform 0.3s ease; 
 }
 
 #contMenu nav ul li:hover > a {
-    color: #f8d09d;
+    color:rgb(87, 32, 29) ;
+    transform: scale(1.05);
 }
 
 #tit {
@@ -111,8 +112,14 @@ main {
     text-align: center;
     margin: 20px auto;
     max-width: 70%; /* Cambiado a un porcentaje más alto para móviles */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
 }
+
+#tit h1{
+    font-size: 50px;
+}
+
 
 .carousel-container {
     max-width: 70%; /* Cambiado a un porcentaje más alto para móviles */

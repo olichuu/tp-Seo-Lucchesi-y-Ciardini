@@ -172,6 +172,8 @@ main{
     margin: 5px;
     color:	#fff2e1 ;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Neucha";
+    
 }
 
 #contTitulo2{
@@ -189,6 +191,7 @@ main{
     margin: 5px;
     color:#fff2e1 ;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Courgette", cursive;
 }
 
 
@@ -200,12 +203,13 @@ main{
     width: 100%;
 }
 
+
 h1 {
     padding: 0px 0px 0px 35px;
     font-size: 35px; 
     color: #f5e1c6; 
     margin-bottom: 10px;
-    font-family: 'Georgia', serif;
+    font-family: "Neucha";
 }
 
 .time-container {
@@ -300,7 +304,6 @@ p {
     animation-range: entry 10% cover 50%;
     animation-fill-mode: both;
     transition: width 3s;
-
     width: 100%;
     height: 100px;
     display: flex;
@@ -321,7 +324,7 @@ a{
     font-weight: 400;
     font-style: normal;
     color:  rgb(141, 48, 44);
-
+    
 }
 
 
@@ -336,7 +339,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 35px 0px;
     margin: 0;
 }
 
@@ -388,7 +391,7 @@ a{
     transition: width 3s;
 
     padding: 20px 0;
-    width: 30%;
+    width: 35%;
     height: 480px;
     display: flex;
     align-items: center;
