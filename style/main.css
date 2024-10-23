@@ -123,55 +123,54 @@ main{
 }
 
 
-.contImg1{
+.contImg1 {
     padding: 0;
     width: 100%;
     height: 450px;
+    position: relative;
 }
 
-#img1{
+
+#img1 {
     width: 100%;
     height: 100%;
+    object-fit: cover; 
 }
 
-#contTitulo1{
+
+#contTitulo1 {
     width: 500px;
-    height: 220px;
     position: absolute;
-    bottom: 15%;
+    top: 60%; 
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    
+    transform: translateX(-50%);
 }
 
-#titulo1{
+
+#titulo1 {
     font-size: 40px;
     margin: 5px;
-    color:	#fff2e1 ;
+    color: #fff2e1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Times New Roman', Times, serif;
-    
 }
 
-#contTitulo2{
+#contTitulo2 {
     width: 600px;
-    height: 220px;
     position: absolute;
-    bottom: 7%;
+    top: 75%; 
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translateX(-50%);
 }
 
-#titulo2{
+
+#titulo2 {
     font-size: 28px;
     margin: 5px;
-    color:#fff2e1 ;
+    color: #fff2e1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-family: "Courgette", cursive;
+    font-family: 'Courgette', cursive;
 }
-
 
 .countdown {
     padding: 0;
