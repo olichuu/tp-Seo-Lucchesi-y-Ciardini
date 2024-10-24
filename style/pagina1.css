@@ -90,21 +90,27 @@ main {
 
 
 
-
-#header{
-    padding: 0;
-    margin: 0;
+#header.navbar, #header .navbar {
+    background-color: #f5e1c6 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .menu{
     background-color: #f5e1c6 !important;
 }
 
+.inicio{
+    color:  rgb(141, 48, 44) !important;
+    font-size: 30px !important;
+    transition: color 0.3s ease !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
 .menuCosas{
     color:  rgb(141, 48, 44) !important;
-    font-size: 30px;
-    transition: color 0.3s ease;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px !important;
+    transition: color 0.3s ease !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
 }
 
 .menuCosas:hover{
