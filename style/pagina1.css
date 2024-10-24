@@ -91,64 +91,24 @@ main {
 
 
 
-#header {
+#header{
     padding: 0;
     margin: 0;
 }
 
-#contMenu {
-    width: 100%;
-    height: 75px;
-    background-color: #f5e1c6;
-    display: flex;
-    align-items: center;
-    padding: 0; 
+.menu{
+    background-color: #f5e1c6 !important;
 }
 
-.contLogo {
-    position: relative;
-}
-
-#logo {
-    position: absolute;
-    top: 50%;
-    left: 7%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-    height: auto;
-}
-
-#contMenu nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center; 
-}
-
-#contMenu nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-#contMenu nav ul li {
-    position: relative;
-    font-size: 25px;
-}
-
-#contMenu nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    color:	rgb(141, 48, 44);
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.menuCosas{
+    color:  rgb(141, 48, 44) !important;
+    font-size: 30px;
     transition: color 0.3s ease;
-    transition: transform 0.3s ease; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#contMenu nav ul li:hover > a {
-    color:rgb(87, 32, 29) ;
-    transform: scale(1.05);
+.menuCosas:hover{
+    color:   #3b5c2d !important;
 }
 
 
@@ -227,16 +187,17 @@ main {
     padding-bottom: 10px;
 }
 
-/* Footer */
+
 footer {
     margin: 0;
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
     background-color: rgb(141, 48, 44);
     color: white;
     padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contFooter {
@@ -244,9 +205,10 @@ footer {
     margin: 0;
     width: 100%;
     display: flex;
-    flex-direction: column;
     padding-bottom: 20px;
     border-bottom: 1px solid #f5e1c6;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer ul {
@@ -260,7 +222,7 @@ footer ul {
 }
 
 footer ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 footer ul li a {
@@ -274,10 +236,10 @@ footer ul li a:hover {
 
 .contContactos {
     align-self: flex-start;
-    justify-self: flex-end;
     text-align: right;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 #titContactos {
@@ -311,7 +273,15 @@ footer ul li a:hover {
     color: #f5e1c6;
 }
 
+
+
 @media (max-width: 320px) {
+    main{
+        background-image: url(../assets/imagenes/luzz.png);
+    }
+    #cuerpo{
+        background-image: url(../assets/imagenes/luzz.png);
+    }
     #contMenu nav ul li {
         font-size: 18px;
     }
@@ -321,16 +291,47 @@ footer ul li a:hover {
         font-size: medium;
     }
 
-    .carousel-container {
-        max-width: 95%;
+    footer {
+        padding: 10px;
+    }
+
+    .contFooter {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
     }
 
     footer ul {
         flex-direction: column;
     }
 
+    footer ul li {
+        margin: 5px 0;
+    }
+
     .contContactos {
-        align-self: flex-start;
-        text-align: left;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #titContactos {
+        font-size: 16px;
+    }
+
+    .contContactos a {
+        font-size: 12px;
+    }
+
+    .contText {
+        margin-top: 10px;
+        order: 2; 
+    }
+
+    .contContactos {
+        order: 1; 
+    }
+
+    #text {
+        font-size: 12px;
     }
 }

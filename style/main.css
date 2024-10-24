@@ -86,42 +86,40 @@ body{
     margin: 0 !important;
 }
 
-#header{
+#header {
     padding: 0;
     margin: 0;
 }
 
-.menu{
+.menu {
     background-color: #f5e1c6 !important;
 }
 
-.menuCosas{
-    color:  rgb(141, 48, 44) !important;
+.menuCosas {
+    color: rgb(141, 48, 44) !important;
     font-size: 30px;
     transition: color 0.3s ease;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.menuCosas:hover{
-    color:   #3b5c2d !important;
+.menuCosas:hover {
+    color: #3b5c2d !important;
 }
 
-
-.inicio{
-    color:  rgb(141, 48, 44) !important;
+.inicio {
+    color: rgb(141, 48, 44) !important;
     font-size: 17px;
     transition: color 0.3s ease;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .inicio:hover {
-    color:  #3b5c2d !important;
+    color: #3b5c2d !important;
 }
 
-main{
+main {
     background-image: url(../assets/imagenes/fondo.png);
 }
-
 
 .contImg1 {
     padding: 0;
@@ -130,22 +128,19 @@ main{
     position: relative;
 }
 
-
 #img1 {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
-
 
 #contTitulo1 {
     width: 500px;
     position: absolute;
-    top: 60%; 
+    top: 60%;
     left: 50%;
     transform: translateX(-50%);
 }
-
 
 #titulo1 {
     font-size: 40px;
@@ -158,11 +153,10 @@ main{
 #contTitulo2 {
     width: 600px;
     position: absolute;
-    top: 75%; 
+    top: 75%;
     left: 50%;
     transform: translateX(-50%);
 }
-
 
 #titulo2 {
     font-size: 28px;
@@ -175,10 +169,12 @@ main{
 .countdown {
     padding: 0;
     margin: 0;
-    background-color: rgb(141, 48, 44); 
+    background-color: rgb(141, 48, 44);
     padding: 10px 20px;
     width: 100%;
 }
+
+
 
 
 h1 {
@@ -211,7 +207,7 @@ h2 {
 p {
     padding: 0px 20px 0px 0px;
     font-size: 1rem;
-    color:#f5e1c6;
+    color: #f5e1c6;
     font-family: 'Georgia', serif;
 }
 
@@ -301,6 +297,33 @@ a{
     font-weight: 400;
     font-style: normal;
     color:  rgb(141, 48, 44);
+
+    .countdown {
+        padding: 5px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .time-container {
+        flex-direction: column; 
+        gap: 5px; 
+        align-items: center; 
+    }
+
+    .time-box {
+        padding: 3px 5px;
+        width: 80%; 
+    }
+
+    h2 {
+        padding: 0; 
+        font-size: 1.2rem; 
+        text-align: center; 
+    }
+
+    p {
+        padding: 0;
+        font-size: 0.9rem; 
+        text-align: center; 
+    }
     
 }
 
@@ -431,11 +454,13 @@ a{
 footer {
     margin: 0;
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     background-color: rgb(141, 48, 44);
     color: white;
     padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contFooter {
@@ -445,6 +470,8 @@ footer {
     display: flex;
     padding-bottom: 20px;
     border-bottom: 1px solid #f5e1c6;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer ul {
@@ -454,14 +481,15 @@ footer ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 footer ul li a {
-    color:#f5e1c6;
+    color: #f5e1c6;
     text-decoration: none;
 }
 
@@ -469,21 +497,20 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-.contContactos{
-    align-self: top;
-    justify-self: right;
+.contContactos {
+    align-self: flex-start;
     text-align: right;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
-#titContactos{
+#titContactos {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:  #f5e1c6;
+    color: #f5e1c6;
     margin-top: 10px;
     font-size: 18px;
 }
-
 
 .contContactos a {
     color: #f5e1c6;
@@ -495,10 +522,8 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-
-
 .contText {
-    margin-top: auto; 
+    margin-top: auto;
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -508,6 +533,98 @@ footer ul li a:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     padding: 10px;
-    color:#f5e1c6;
+    color: #f5e1c6;
+}
+
+@media (max-width: 320px) {
+    .menuCosas {
+        font-size: 20px;
+    }
+
+    .inicio {
+        font-size: 14px;
+    }
+
+    .contImg1 {
+        height: 250px; 
+    }
+
+    #contTitulo1 {
+        width: 90%; 
+        top: 50%; 
+    }
+
+    #titulo1 {
+        font-size: 24px; 
+    }
+
+    #contTitulo2 {
+        width: 90%; 
+        top: 65%; 
+    }
+
+    #titulo2 {
+        font-size: 18px; 
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .contFooter {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+
+    .contContactos {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #titContactos {
+        font-size: 16px;
+    }
+
+    .contContactos a {
+        font-size: 12px;
+    }
+
+    .contText {
+        margin-top: 10px;
+        order: 2; 
+    }
+
+    .contContactos {
+        order: 1; 
+    }
+
+    #text {
+        font-size: 12px;
+    }
+    .contImg {
+        width: 90%; 
+        height: auto; 
+        justify-content: center; 
+        padding: 10px 0; 
+    }
+
+    #img1 {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .contenedor {
+        margin: 0px 0px 5px 0px; 
+        border-width: 2px;
+    }
 }
 
